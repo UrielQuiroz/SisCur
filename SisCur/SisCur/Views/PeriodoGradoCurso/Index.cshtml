@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/SideBarMenu.cshtml";
+}
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,af-2.0.0,b-1.0.3,b-colvis-1.0.3,b-html5-1.0.3,b-print-1.0.3,se-1.0.1/datatables.min.css" />
+<link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+<link href="~/Content/CSSPropio.css" rel="stylesheet" />
+
+<h2>Periodo-Grado-Curso</h2>
+
+<button type="button" onclick="abrirModal(0)" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    NUEVO
+</button>
+
+
+<div id="tabla" class="mt-4">
+
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Asignar Curso a los Grados</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table style="width: 80%; margin: auto;">
+                    <tr>
+                        <td width="40%">ID</td>
+                        <td width="60%"><input disabled class="limpiar form-control" type="text" id="txtIdPErGRaCur" readonly /></td>
+                    </tr>
+                    <tr>
+                        <td>Periodo</td>
+                        <td><select id="cboPEriodo" class="limpiar obligatorio form-control"></select></td>
+                    </tr>
+                    <tr>
+                        <td>Grado</td>
+                        <td><select id="cboGrado" class="limpiar obligatorio form-control"></select></td>
+                    </tr>
+                    <tr>
+                        <td>Curso</td>
+                        <td><select id="cboCurso" class="limpiar obligatorio form-control"></select></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button id="btnCancelat" type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                <button onclick="Agregar()" type="button" class="btn btn-success">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery-ui.min.js"></script>
+<script src="~/Scripts/PeriodoGradoCurso.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/r/dt/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,af-2.0.0,b-1.0.3,b-colvis-1.0.3,b-html5-1.0.3,b-print-1.0.3,se-1.0.1/datatables.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+

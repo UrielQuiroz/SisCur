@@ -1,31 +1,47 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+    ViewBag.Title = "Index";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    <header>
+
+        <div class="container text-center">
+            <div class="row">
+
+                <div class="col-md-7 col-sm-12  text-white">
+                    <h6>AUTHOR: URIEL QUIROZ</h6>
+                    <h2>Elige cuánto, cuándo, dónde y con quién practicar tu ingles.</h2>
+                    <p>
+                        Elige cuánto, cuándo, dónde y con quién practicar tu ingles.
+                    </p>
+                    <div class="">
+                        <button class="btn btn-light px-5 py-2 primary-btn">
+                            Conoce nuestros Instructores
+                        </button>
+                        <button class="btn btn-light px-5 py-2 primary-btn mt-lg-2">
+                            Registrate Gratis
+                        </button>
+                    </div>
+                    <div class="mt-2">
+                        <button class="btn btn-light px-5 primary-btn">
+                            Clases En Vivi
+                        </button>
+                        <button class="btn btn-light px-5 primary-btn">
+                            Clases Presenciales
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12 mt-lg-5 mb-5">
+                    <img class="mt-lg-5 img-responsive mb-5" src="~/img/header-img.png" alt="RFID" />
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </header>
+
